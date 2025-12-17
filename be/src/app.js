@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const employeesRouter = require("./routes/employees");
 
 const app = express();
 
@@ -11,7 +12,7 @@ app.use(cors({ origin: corsOrigin  }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get("/test", (_req, res) => res.json({ ok: 'test run ok' }));
+app.use("/api/employees", employeesRouter);
 
 const PORT = process.env.PORT || 3000;
 const MONGO_URI = process.env.MONGO_URI;

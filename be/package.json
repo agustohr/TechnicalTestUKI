@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon src/app.js",
+    "seed": "node scripts/seed-employees.js",
+    "seed:clear": "node scripts/seed-employees.js --clear"
   },
   "keywords": [],
   "author": "",
