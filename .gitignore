@@ -1,0 +1,23 @@
+# ===== Node / Backend =====
+**/node_modules/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/pnpm-debug.log*
+**/logs/
+**/*.log
+
+# env (jangan pernah di-push)
+**/.env
+**/.env.*
+!**/.env.example
+
+# ===== Angular / Frontend =====
+**/dist/
+**/.angular/
+**/.cache/
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+**/.vscode/
+**/.idea/
