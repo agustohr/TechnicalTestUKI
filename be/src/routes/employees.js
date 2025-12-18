@@ -63,7 +63,7 @@ router.put("/:id", async (req, res) => {
 
     res.json({ message: `Employee atas nama ${emp.name} berhasil diubah` });
   } catch (err) {
-    if (err?.code === 11000) return res.status(409).json({ message: "Employee ID sudah dipakai" });
+    if (err.code === 11000) return res.status(409).json({ message: "Employee ID sudah dipakai" });
     res.status(500).json({ message: err.message });
   }
 });

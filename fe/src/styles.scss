@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #f5f7fb;
+}
+
+.page {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.card-title {
+  margin: 0;
+  font-weight: 500;
+}
+
+.actions-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0 16px;
+}
+
+th.mat-header-cell {
+  font-weight: 600;
+}
+
